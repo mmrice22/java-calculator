@@ -26,10 +26,15 @@ public class Arithmetic {
 	}
 
 	public static float power(float num1, float num2) {
-		return 10.0f;
+		float result = 1;
+		for (int i = 0; i < num2; i++) {
+			result *= num1;
+		}
+		
+		return result;
 	}
 
 	public static float mod(float num1, float num2) {
-		return 10.0f;
+		return num1 % num2;
 	}
 }
